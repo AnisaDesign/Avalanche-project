@@ -96,8 +96,6 @@ main section{
 
 
 
-
-
 /* --------- Grid Content ----------- */
 
 .full-columns{
@@ -106,6 +104,12 @@ main section{
 
 .half-columns{
 	grid-column: auto / span 2;
+}
+
+
+/*----------News Grid--------*/
+.grid-container {
+	display: grid;
 }
 
 
