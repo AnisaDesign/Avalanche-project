@@ -111,16 +111,17 @@ main section{
 
 
 /* -----------  Hero Styles ------------ */
-section.hero { 
-	
+.section.hero {
+	position: relative;
+  text-align: center;
+  color: white;
 }
 
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
 }
-
-}
-
-}
-
 
 /*------ section.hero {
 	margin-bottom:1rem;
