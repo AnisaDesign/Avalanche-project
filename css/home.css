@@ -116,9 +116,6 @@ section.hero {
 	margin-bottom:1rem;
 	max-height:80vh;
 	height:80vh;
-	/* background-image:url("../img/molteni-hero-1200.jpg");
-	background-repeat:no-repeat;
-	background-size:cover; */
 	position:relative;
 }
 
@@ -129,7 +126,7 @@ section.hero {
 	padding:.5rem;
 	margin-left:2rem;
 	position:absolute;
-	bottom:2rem;
+	bottom:6rem;
 }
 
 .hero-text h2{
