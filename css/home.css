@@ -111,8 +111,16 @@ main section{
 
 
 /* -----------  Hero Styles ------------ */
+section.hero
 
-section.hero {
+}
+
+}
+
+}
+
+
+/*------ section.hero {
 	margin-bottom:1rem;
 	max-height:80vh;
 	height:80vh;
