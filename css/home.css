@@ -119,10 +119,15 @@ main section{
 }
 
 .bottom-left {
-	position: relative;
+	position: absolute;
+	color:white;
 	bottom: 8px;
 	left: 16px;
+
 }
+
+.hero-text h2{
+	color:white;}
 
 /*------ section.hero {
 	margin-bottom:1rem;
