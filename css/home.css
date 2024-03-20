@@ -85,10 +85,10 @@ main section{
 
 .overlay-text {
 	position:absolute;
-	top: 50%;
-	left: 50%;
+	top: 40%;
+	left: 30%;
 	transform: translate (-50%, -50%);
-	color:#fff;
+	color:#fffff;
 	padding: 10px 20px;
 	font-size: 20px;
 	text-align: center;
