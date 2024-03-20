@@ -111,21 +111,8 @@ main section{
 
 
 /* -----------  Hero Styles ------------ */
-.section.hero {
-	margin-bottom:1rem;
-	max-height:80vh;
-	height:80vh;
-	position:relative;
-}
 
-.bottom-left {
-	position: absolute;
-	color:white;
-	bottom: 8px;
-	left: 16px;
-}
-
-/*------ section.hero {
+section.hero {
 	margin-bottom:1rem;
 	max-height:80vh;
 	height:80vh;
