@@ -66,13 +66,18 @@ figure{
 main {
 	padding:1rem;
 	margin:0 auto;
-	grid-gap:1em;
 }
 
 main section{
 	background-color:white;
 	padding:1rem;
 }
+
+.cta-main {
+	
+}
+
+
 
 
 /* --------- Grid Content ----------- */
