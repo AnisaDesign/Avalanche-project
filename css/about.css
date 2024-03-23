@@ -83,31 +83,8 @@ figure {
   width: 80%;
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  background: gold;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-wrapper {
-  background: oranged;
-}
-
-.cta-main{
-  color: white;
-  margin-top: 1rem;
-  width: 80%;
-  background: #1C3052;
-  text-align: center;
-  max-width: 200rem;
-  padding: 0.5rem;
-}
-
-
 /* End of Structural containers */
+
 main {
   margin: 0 auto;
 }
@@ -149,21 +126,62 @@ main section {
   grid-column: auto / span 2;
 }
 
-/*----------News Grid--------*/
-
-.news {
-  background: url(../img/newscoloured.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.media-01{ 
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
+.media-01 img{
+  width:100%;
+} 
+
+.media-01 .text{
+  position: absolute;
+  color:black;
+  left: 50px;
+  top: 50px;
+  background-size: 20%;
+  transform:translate(-50%, -50%);
+}
+
+
+
+
+/*----------Our Mission
+
+.media-01 {
+  width: 100%;
+  height: 80vh;
+  background: url(../img/ourmission_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*----------Our Staff--------*/
+
+.media-02 {
+  background: url(../img/our_staff.jpg);
+  background-repeat: no-repeat;
+  background-size: width=1060 height=637;
+}
+
+/*----------What We Do--------*/
+
+.media-03 {
+  background: url(../img/what_we_do.jpg);
+  background-repeat: no-repeat;
+  background-size: width=1060 height=637;
+}
 /* -----------  Hero Styles------------ */
 
-.hero {
+.hero-01{
   margin-bottom: 1rem;
   width: 100%;
   height: 80vh;
-  background: url(../img/hero-banner.jpg);
+  background: url(../img/about-us-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
