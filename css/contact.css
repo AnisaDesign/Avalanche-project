@@ -1,10 +1,17 @@
-* {
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Lahore Gurmukhi",
-    Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -64,50 +71,43 @@ figure {
   margin: 0;
 }
 
-[id] {
-  scroll-margin-top: 3ex;
-}
-
 /* ------ Main Content -------*/
 
 /* Structural containers */
-.outer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.inner-container {
-  margin-top: 1rem;
-  width: 80%;
-}
 
-.cards {
+.header-container {
   display: flex;
   flex-direction: row;
-  background: gold;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-wrapper {
-  background: oranged;
-}
-
-.cta-main{
-  color: white;
-  margin-top: 1rem;
-  width: 80%;
-  background: #1C3052;
-  text-align: center;
-  max-width: 200rem;
-  padding: 0.5rem;
-}
-
+  width: 100%;
+  background-color: #1c3052;
+  }
+  
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .inner-container {
+    margin-top: 1rem;
+    width: 80%;
+  }
 
 /* End of Structural containers */
+
+main {
+  margin: 0 auto;
+}
+
+main section {
+  background-color: white;
+  padding: 1rem;
+}
+
+/* End of Structural containers 
+
 main {
   margin: 0 auto;
 }
@@ -149,21 +149,13 @@ main section {
   grid-column: auto / span 2;
 }
 
-/*----------News Grid--------*/
-
-.news {
-  background: url(../img/newscoloured.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* -----------  Hero Styles------------ */
 
 .hero {
   margin-bottom: 1rem;
   width: 100%;
   height: 80vh;
-  background: url(../img/hero-banner.jpg);
+  background: url(../img/contact-us-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -172,7 +164,7 @@ main section {
 
 .hero-text {
   color: white;
-  max-width: 100rem;
+ /* max-width: 100rem; */
   padding: 0.5rem;
   padding-right: 5rem;
 }
@@ -180,7 +172,6 @@ main section {
 .hero-text h2 {
   color: white;
 }
-
 /* --------------- Header and Nav Styles -------- */
 
 .logo {
@@ -207,12 +198,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #E15C47;
+  color: #E15c47;
   text-decoration: none;
 }
 
 /* Style the search box inside the navigation bar */
-.topnav input[type=text] {
+.topnav input[type="text"] {
   float: right;
   padding: 6px;
   border: none;
@@ -220,58 +211,180 @@ nav a:hover {
   margin-right: 16px;
   font-size: 17px;
 }
+
+/*--Volunteer section--*/
+
+.volunteer{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  background-color: white;
+}
+
+.image-with-text-overlap-01 {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/volunteer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-overlap{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  margin-right: 1rem;
+  min-height:23rem;
+}
+
+
+
+/*.text-overlap
+  width: 50%;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  padding:2rem;
+  margin-left: -15rem;
+  min-height:23rem;
+}
+/* Our Volunteer section
+
+.media-01 {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/volunteer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.media-text {
+  color: black;
+ /* max-width: 100rem; 
+  background-color: white;
+  display: flex;
+  width: 40%;
+  align-self: center;
+  padding: 1rem;
+}
+
+/* Contact Us*/
+.container {  
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: #9fbec3;
+  border: 1px;
+  border-color: grey;
+}
+
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+  left: -80px;
+}
+
+.header {
+  padding: 1.5em 2.5em;
+  color: #1c3052;
+}
+.body {
+  padding: 0.5em 2.5em 1em;
+}
+
+.pull-right {
+  float: right; 
+}
+
+input {
+  margin: 0 0 0.5em 0;
+  border: 1px solid grey;
+  padding: 6px 10px;
+  color: #ccdfdf;
+  font-size:small;
+}
+
+textarea {
+  border: 1px solid grey;
+  padding: 6px 10px;
+  width: 100%;
+  color: darkgrey;
+}
+small {
+  color: #1c3052;
+  margin: 0 0 0 0.5em;
+}
+
+.address-box {
+  background: hotpink;
+  width: 50%;
+}
+
+
+
 /* ------------ Footer Style --------------- */
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: #1C3052;
+  background-color: #1c3052;
   margin-top: 1rem;
-  color:white;
+  color: white;
+  min-height: 20vh;
 }
-.nav-logo{
-  align-content: space-around;
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
 }
-.footer__headline {
-  color:white;
+
+.nav-logo {
+  width: 15%;
+}
+.address {
+  background: hotpink;
+  width: 50%;
+}
+.footer-nav {
+  color: white;
+  width: 35%;
+  background: lemonchiffon;
+  flex: 1;
+}
+.footer-headline {
+  color: white;
   font-weight: bold;
 }
 
-.footer__list {
+.footer-list {
   color:white;
   list-style: none;
-  padding: 0;
+  padding: 0.5rem;
   margin: 0;
+  background: yellowgreen;
 }
 
 .nav-level-1 {
 color:white;  
 }
 
-ul{
+ul {
   list-style-type: none;
-  color:white;
-}
-
-@media (max-width: 49em) {
-  .half-columns {
-    grid-column: auto / span 4;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-text {
-    width: auto;
-    margin-left: 0;
-  }
-}
-
-/* ------------ Footer Style --------------- */
-/*
-footer {
-  width: 100vw;
-  padding: 2rem;
   color: white;
-  background-color: #1c3052;
+}
+ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 49em) {

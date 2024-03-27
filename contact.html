@@ -6,60 +6,135 @@
     <title>Learning Styling</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
 
+ 
   <body id="top">
-    <header class="outer-container">
-      <nav class="inner-container">
-        <a href="index.html">
-          <img
-            src="./img/Logo.png "
-            alt="It's a logo with mountain shapes and Kalmont name under them"
-            width="79"
-            height="58"
-        /></a>
-        <a href="about.html">ABOUT US</a>
-        <a href="safety.html">SAFETY RISK & AWARENESS</a>
-        <a href="events.html">EVENTS</a>
-        <a href="contact.html">CONTACT US</a>
-        <a href="news.html">WEATHER</a>
-        <img src="img/Weather_Icon.svg" alt="weather icon" />
-        <a href="search"></a>
-        <input type="text" placeholder="Search..">
-        <img src="img/ic-baseline-search.svg" alt="search icon" />
-      </nav>
-    </header>
-
-	  
-	<section class="hero">
-		<picture>
-			
-				<img src="img/contact-us-banner.jpg" style="width:100%;" alt="mountains and trees">
-			</picture>
-	
-		<div class="hero-text">
-			<h2>CONTACT US</h2>
-			
+	<header class="outer-container header-container">
+		<nav class="inner-container">
+		  <a href="index.html">
+			<img
+			  src="./img/Logo.png "
+			  alt="It's a logo with mountain shapes and Kalmont name under them"
+			  width="79"
+			  height="58"
+		  /></a>
+		  <a href="about.html">ABOUT US</a>
+		  <a href="safety.html">SAFETY RISK & AWARENESS</a>
+		  <a href="events.html">EVENTS</a>
+		  <a href="contact.html">CONTACT US</a>
+		  <a href="news.html">WEATHER</a>
+		  <img src="img/Weather_Icon.svg" alt="weather icon" />
+		  <a href="search"></a>
+		  <input type="text" placeholder="Search.."/>
+		  <img src="img/ic-baseline-search.svg" alt="search icon" />
+		</nav>
+	  </header>
+  
+	  <section class="hero outer-container">
+		<div class="hero-text inner-container">
+		  <h1 class="heading">Contact Us</h1>
 		</div>
-	</section><!-- end of hero section -->
-	
-	<main>
-		<div id="intro">
-			
-			<p>Environmental Stewardship: Respecting and preserving the natural beauty of the Kalmont Mountain range is integral to our ethos. We actively engage in environmental stewardship initiatives, promoting Leave No Trace principles and sustainable practices to ensure that future generations can enjoy these pristine landscapes.</p>
-		</div><!-- end of intro -->
+	  </section>
+	  
+	  <!-- end of hero section-->
 
+	  <main class="outer-container">
+		<div class="intro inner-container">
+		  <p>
+			Environmental Stewardship: Respecting and preserving the natural beauty of the Kalmont Mountain range is integral to our ethos. We actively engage in environmental stewardship initiatives, promoting Leave No Trace principles and sustainable practices to ensure that future generations can enjoy these pristine landscapes.		  </p>
+		</div>
+		<!-- end of intro -->
+	  </main>
 
-		<section class="hero">
-		<picture>
-				<img src="img/volunteer.jpg" width="1056" height="598" alt="Five people with the skiing posing for the photo in the mountains and it is snowy">
-				<h3>Volunteer</h3>
+	  <section class="volunteer">
+		<figure class="image-with-text-overlap-01"></figure>
+		<div class="text-overlap">
+			<h3>Volunteer</h3>
+			<div id="volunteer.content">
 				<p>Join us on our mission to make the mountains a safer place for everyone. Whether you're an outdoor enthusiast, a community partner, or someone seeking assistance, Kalmont Mountain Safety and Rescue Team is here to serve and protect. Together, let's explore the heights responsibly and create a legacy of safety in the heart of the Kalmont Mountains.</p>
-				</picture>
-			</section>
+			</div>
+		</div>
+	</section>
 
-			
+<!-- Volunteer --
+		<section class="media-01 outer-container">
+			<div class="media-text inner-container">
+			  <h3 class="title">Volunteer</h3>
+			  <p>Join us on our mission to make the mountains a safer place for everyone. Whether you're an outdoor enthusiast, a community partner, or someone seeking assistance, Kalmont Mountain Safety and Rescue Team is here to serve and protect. Together, let's explore the heights responsibly and create a legacy of safety in the heart of the Kalmont Mountains.</p>
+			</div>
+		</section>
+	
+<!-- end of Volunteer -->
+
+<!-- Contact Us -->
+<div class="container">
+			<div class="row header">
+			  <h1>Contact Form &nbsp;</h1>
+			  <h3>Let us know more about you ! </h3>
+			</div>
+
+			<div class="row body">
+			  <form action="form">
+				<ul>
+					<li>
+						<p class="left">
+						  <input type="text" name="first_name" placeholder="First Name" />
+						</p>
+						<p class="pull-right">
+						  <input type="text" name="last_name" placeholder="Last Name" />      
+						</p>
+					  </li>
+
+					<li>
+						<p>
+						  <input type="email" name="email" placeholder="E-mail" />
+						</p>
+					</li>  
+					
+					<li>
+						<p>
+						  <input type="tel" name="tel" placeholder="Phone" />
+						</p>
+					</li> 
+
+					<li><div class="divider"></div></li>
+		
+        <li>
+          <textarea cols="46" rows="3" name="comments" placeholder="Message"></textarea>
+        </li>
+        
+        <li>
+          <input class="btn btn-submit" type="submit" value="Submit" />
+          <small>or press <strong>enter</strong></small>
+        </li>
+	</ul>
+</form>  
+</div>
+</div>
+
+	<div class="address-box">
+		<ul class="address-container">
+			<li class="address">
+				<h4 class="address-headline">Address:</h4>
+			</li>
+		</ul>
+	<ul class="address-list">
+		<li>6000 Kalmont Bowl Road, 
+			West Vancouver BC</li>
+		<li>info@kalmountmountain.ca</li>
+		<li>Call us: 604-926-5612</li>
+		<li>We are open from Monday - Friday</li>
+		<li>08.00 am - 05.00 pm</li>
+	</ul>
+	</div>
+
+
+
+		<!-- end of contact us. The source is: https://codepen.io/nickhaskell/pen/noeyRN -->
+
+		<!--
 			<div class="container">
 				<form action="action_page.php">
 			  
@@ -75,50 +150,59 @@
 			  
 				</form>
 			  </div>
-	<footer>
-		<div class="wrap footer-columns">
-			<!--BEGIN Footer-logo-->
-			<div class="nav-logo">
-				<a href="index.html"> <img src="./img/Logo.png " alt="It's a logo with mountain shapes and Kalmont name under them" width="79" height="58"></a>
-			</div>
-		</div>
-	<!--END Footer-logo-->
-	
-	<!--BEGIN Footer Address-->
-		<h4>Address</h4>
-	  <p> 604-926-5612
-	6000 Kalmont Bowl Road, West Vancouver BC
-	info@kalmountmountain.ca </p>
-	<!--END Footer-logo-->
-	
-	<div class="footer_column footer-nav-container">
-		<!--Begin Nav-->
-		<nav class="nav dropdown" aria-label="Secondary">
-				<ul class="nav-ul-1">
-					<li class="nav-level-1">
-						<a href="about.html">ABOUT US</a>
-					</li>
-					<li class="nav-level-1">
-						<a href="safety.html">SAFETY RISK & AWARENESS</a>
-					</li>
-					<li class="nav-level-1">
-						<a href="events.html">EVENTS</a>
-					</li>
-					<li class="nav-level-1">
-						<a href="contact.html">CONTACT US</a>
-					</li>
-					<li class="nav-level-1">
-						<a href="news.html">WEATHER</a>
-					</li>
-				</ul>
-		</nav>
-	</div>
-	<small>
-	  ©2024 Kalmont Mountain Safety and Rescue Organization. All rights reserved. Kalmont logo is a trademark of Kalmont Mountain Safety and Rescue Organization.
-	</small>
-	</footer>
-	</body>
-	</html>
-	<!-- end of the footer area -->
-</body>
-</html>
+			-->
+ <!-- FOOTER -->
+ <footer class="outer-container">
+	<ul class="inner-container footer-container">
+	  <li class="nav-logo">
+		<a href="index.html">
+		  <img
+			src="./img/Logo.png "
+			alt="It's a logo with mountain shapes and Kalmont name under them"
+			width="79"
+			height="58"
+		/></a>
+	  </li>
+	  <li class="address">
+		<h4 class="footer-headline">Address:</h4>
+		<ul class="footer-list">
+		  <li>604-926-5612</li>
+		  <li>6000 Kalmont Bowl Road, West Vancouver BC</li>
+		  <li>info@kalmountmountain.ca</li>
+		</ul>
+	  </li>
+  
+	  <li class="footer-nav">
+		<ul class="footer-list">
+		  <li class="nav-level-1">
+			<a href="about.html">About Us</a>
+		  </li>
+		  <li class="nav-level-1">
+			<a href="safety.html">Safety Risk & Awareness</a>
+		  </li>
+		  <li class="nav-level-1">
+			<a href="events.html">Events</a>
+		  </li>
+		  <li class="nav-level-1">
+			<a href="contact.html">Contact Us</a>
+		  </li>
+		  <li class="nav-level-1">
+			<a href="news.html">Weather</a>
+		  </li>
+		</ul>
+	  </li>
+	</ul>
+	<ul class="footer_copyright">
+	  <li>
+		<small>
+		  ©2024 Kalmont Mountain Safety and Rescue Organization. All rights
+		  reserved. Kalmont logo is a trademark of Kalmont Mountain Safety and
+		  Rescue Organization.
+		</small>
+	  </li>
+	</ul>
+  </footer>
+   <!-- End of footer. The homepage was done with the help of James Neufeld, lab supervisor.-->
+  
+  </body>
+  </html>

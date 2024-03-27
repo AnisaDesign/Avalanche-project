@@ -1,10 +1,17 @@
-* {
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Lahore Gurmukhi",
-    Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -64,24 +71,30 @@ figure {
   margin: 0;
 }
 
-[id] {
-  scroll-margin-top: 3ex;
-}
 
 /* ------ Main Content -------*/
 
 /* Structural containers */
-.outer-container {
+
+.header-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   width: 100%;
-  margin-bottom: 1rem;
-}
-.inner-container {
-  margin-top: 1rem;
-  width: 80%;
-}
+  background-color: #1c3052;
+  }
+  
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .inner-container {
+    margin-top: 1rem;
+    width: 80%;
+  }
 
 /* End of Structural containers */
 
@@ -94,27 +107,6 @@ main section {
   padding: 1rem;
 }
 
-.image-container {
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 45%;
-  left: 30%;
-  transform: translate (-50%, -50%);
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  font-size: 40px;
-  text-align: center;
-}
 
 /* --------- Grid Content ----------- */
 
@@ -126,58 +118,9 @@ main section {
   grid-column: auto / span 2;
 }
 
-.media-01{ 
-  width: 100%;
-  height: auto;
-  position: relative;
-}
+/* -----------  Hero Styles----------- */
 
-.media-01 img{
-  width:100%;
-} 
-
-.media-01 .text{
-  position: absolute;
-  color:black;
-  left: 50px;
-  top: 50px;
-  background-size: 20%;
-  transform:translate(-50%, -50%);
-}
-
-
-
-
-/*----------Our Mission
-
-.media-01 {
-  width: 100%;
-  height: 80vh;
-  background: url(../img/ourmission_01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: flex-start;
-}
-
-/*----------Our Staff--------*/
-
-.media-02 {
-  background: url(../img/our_staff.jpg);
-  background-repeat: no-repeat;
-  background-size: width=1060 height=637;
-}
-
-/*----------What We Do--------*/
-
-.media-03 {
-  background: url(../img/what_we_do.jpg);
-  background-repeat: no-repeat;
-  background-size: width=1060 height=637;
-}
-/* -----------  Hero Styles------------ */
-
-.hero-01{
+.hero {
   margin-bottom: 1rem;
   width: 100%;
   height: 80vh;
@@ -190,7 +133,7 @@ main section {
 
 .hero-text {
   color: white;
-  max-width: 100rem;
+ /* max-width: 100rem; */
   padding: 0.5rem;
   padding-right: 5rem;
 }
@@ -225,12 +168,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #E15C47;
+  color: #E15c47;
   text-decoration: none;
 }
 
 /* Style the search box inside the navigation bar */
-.topnav input[type=text] {
+.topnav input[type="text"] {
   float: right;
   padding: 6px;
   border: none;
@@ -238,58 +181,137 @@ nav a:hover {
   margin-right: 16px;
   font-size: 17px;
 }
+
+.our-mission{
+  background-color: white;
+  padding: 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.image-with-text-overlap-01 {
+  width:50%;
+  height:100vh;
+  background-image: url(../img/ourmission_01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-overlap{
+  width: 50%;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  padding:2rem;
+  margin-left: -15rem;
+  min-height:23rem;
+}
+
+/* Our Mission section
+
+.media-01 {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/ourmission_01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-left;
+}
+
+.media-02 {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/our_staff.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-left;
+}
+
+.media-03 {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 80vh;
+  background: url(../img/what_we_do.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: flex-left;
+}
+
+.media-text {
+  color: black;
+ /* max-width: 100rem; 
+
+  padding-right: 5rem;
+  background-color: #fdf3d0;
+  display: flex;
+  width: 40%;
+  align-self: center;
+  padding: 1rem;
+}
+
 /* ------------ Footer Style --------------- */
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: #1C3052;
+  background-color: #1c3052;
   margin-top: 1rem;
-  color:white;
+  color: white;
+  min-height: 20vh;
 }
-.nav-logo{
-  align-content: space-around;
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
 }
-.footer__headline {
-  color:white;
+
+.nav-logo {
+  width: 15%;
+}
+.address {
+  background: hotpink;
+  width: 50%;
+}
+.footer-nav {
+  color: white;
+  width: 35%;
+  background: lemonchiffon;
+  flex: 1;
+}
+.footer-headline {
+  color: white;
   font-weight: bold;
 }
 
-.footer__list {
+.footer-list {
   color:white;
   list-style: none;
-  padding: 0;
+  padding: 0.5rem;
   margin: 0;
+  background: yellowgreen;
 }
 
 .nav-level-1 {
 color:white;  
 }
 
-ul{
+ul {
   list-style-type: none;
-  color:white;
-}
-
-@media (max-width: 49em) {
-  .half-columns {
-    grid-column: auto / span 4;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero-text {
-    width: auto;
-    margin-left: 0;
-  }
-}
-
-/* ------------ Footer Style --------------- */
-/*
-footer {
-  width: 100vw;
-  padding: 2rem;
   color: white;
-  background-color: #1c3052;
+}
+ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 49em) {
