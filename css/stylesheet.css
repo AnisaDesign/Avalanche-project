@@ -29,9 +29,11 @@ h1 {
   margin-top: 0;
   font-size: 3rem;
 }
+
 .heading {
   text-transform: uppercase;
 }
+
 h2,
 h3 {
   font-weight: bold;
@@ -44,7 +46,7 @@ h2 {
 }
 
 a {
-  color: black;
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }
@@ -59,9 +61,6 @@ ol {
   font-size: 1rem;
 }
 
-p {
-  width: clamp(40%, 75ch, 100%);
-}
 img {
   height: auto;
   max-width: 100%;
@@ -98,19 +97,17 @@ background-color: #1c3052;
 .cards {
   display: flex;
   flex-direction: row;
-  background: gold;
   list-style-type: none;
   padding: 0;
   width: 66.666%;
 }
 
 .card-wrapper {
-  background: orangered;
   display: flex;
   flex-direction: row;
 }
+
 .card {
-  background: yellowgreen;
   width: 100%;
   margin: 2rem;
 }
@@ -122,6 +119,10 @@ background-color: #1c3052;
   right: 0;
   width: 100%;
   background: blue;
+}
+
+.card-lower-description{
+  color:black;
 }
 
 .cta-main {
@@ -163,7 +164,7 @@ main section {
 .news-headline-container {
 }
 .news-headline {
-  font-weight: 100;
+  font-weight: bold;
   font-size: 2.225rem;
   color: white;
 }
@@ -175,9 +176,10 @@ main section {
 .date-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   color: black;
   width: 6rem;
+  font-weight: 10;
 }
 
 .date {
@@ -210,14 +212,10 @@ main section {
 }
 .button {
   font-size: 2.725rem;
-  background: rgba(149, 179, 28, 0.8);
   padding: 1rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid black;
 }
 .button:hover {
   background: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
 }
 
 /*----------News Grid--------*/
@@ -310,13 +308,10 @@ footer {
   width: 15%;
 }
 .address {
-  background: hotpink;
   width: 50%;
 }
 .footer-nav {
-  color: white;
   width: 35%;
-  background: lemonchiffon;
   flex: 1;
 }
 .footer-headline {
@@ -327,13 +322,14 @@ footer {
 .footer-list {
   color:white;
   list-style: none;
-  padding: 0.5rem;
+  padding: 0rem;
   margin: 0;
-  background: yellowgreen;
 }
-
+.about.html{
+  color: white;
+}
 .nav-level-1 {
-color:white;  
+color:white; 
 }
 
 ul {
