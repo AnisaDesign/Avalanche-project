@@ -230,7 +230,6 @@ nav a:hover {
   margin-bottom: 1rem;
   background-color: #9fbec3;
 }
-
 .inner-container-01 {
   margin-top: 1rem;
   width: 80%;
@@ -244,12 +243,11 @@ nav a:hover {
   width: 66.666%;
 }
 
-
 .container {
   max-width: 510px;
   min-width: 324px;
   margin-top: 0rem;
-  margin-bottom: 50px auto 0px;
+  margin-bottom: 0px;
   border: 1px;
   border-color: grey;
 }
@@ -332,10 +330,7 @@ small {
   margin-bottom: 5rem;
   margin-left: 5rem;
 }
- /*background: hotpink;
-  width: 50%;
-  margin-left: 2 rem;
-}
+
 
 /* ------------ Footer Style --------------- */
 footer {

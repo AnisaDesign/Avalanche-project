@@ -38,7 +38,7 @@ h2,
 h3 {
   font-weight: bold;
   color: black;
-  margin-bottom: 3 rem;
+  margin-bottom: 3rem;
 }
 
 h2 {
@@ -154,15 +154,11 @@ main section {
 .news-item {
   display: flex;
   flex-direction: row;
-  border-top: 2px solid white;
+  border-top: 1px solid white;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
-.news-date {
-}
-.news-headline-container {
-}
 .news-headline {
   font-weight: bold;
   font-size: 2.225rem;
@@ -176,7 +172,7 @@ main section {
 .date-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   color: black;
   width: 6rem;
   font-weight: 10;
